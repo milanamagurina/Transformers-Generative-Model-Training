@@ -245,3 +245,41 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# Google Colab-specific
+/content/drive/           # Ignore Google Drive mounts
+*.ipynb_checkpoints/      # Extra precaution for notebook checkpoints
+
+# WandB logs and configurations
+wandb/                    # Ignore WandB logs directory
+*.wandb                   # Ignore WandB temporary files
+*.wandb_debug             # Ignore WandB debug files
+.netrc                    # Contains WandB authentication credentials
+
+# Model artifacts and large files
+*.ckpt                    # Model checkpoints
+*.pt                      # PyTorch model files
+*.pth                     # PyTorch model weights
+*.onnx                    # ONNX model files
+models/                   # Custom model directories
+*.h5                      # HDF5 files
+*.tar.gz                  # Compressed model files
+*.zip                     # Other compressed artifacts
+
+# Datasets and large files
+*.csv                     # Dataset files
+*.tsv                     # Tab-separated dataset files
+*.npy                     # Numpy arrays
+*.pickle                  # Pickle files
+*.pkl                     # Pickle files
+*.jsonl                   # JSON lines files
+*.parquet                 # Parquet files
+
+# Jupyter Notebook files (if not all notebooks should be tracked)
+*.ipynb                   # Ignore Jupyter Notebook files (optional)
+
+# Logs and temporary files
+*.log                     # Log files
+*.tmp                     # Temporary files
+*.bak                     # Backup files
